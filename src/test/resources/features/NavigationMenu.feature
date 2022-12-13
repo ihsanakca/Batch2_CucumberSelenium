@@ -3,7 +3,9 @@ Feature: Krafttech Dashboard test
 
   @Mike
   Scenario: Logged as Mike
-    Given The user is on the login page
+    Given The user should be able to login page
+    When The user enters Mike credentials
+    Then The user should be able to login
     When Take the Dashboard actual text
     And  Assert the first expected text
     And  go to Developers menu and get the text of Developer
@@ -11,7 +13,9 @@ Feature: Krafttech Dashboard test
 
   @Sebastian
   Scenario: Logged as Sebastian
-    Given The user is on the login page
+    Given The user should be able to login page
+    When The user enters Sebastian credentials
+    Then The user should be able to login
     When Take the Dashboard actual text
     And  Assert the first expected text
     And  go to Edit Profile menu and get the text of Edit User Profile
@@ -19,7 +23,9 @@ Feature: Krafttech Dashboard test
 
   @JhonNash @db
   Scenario: Logged as Jhon Nash
-    Given The user is on the login page
+    Given The user should be able to login page
+    When The user enters Jhon Nash credentials
+    Then The user should be able to login
     When Take the Dashboard actual text
     And  Assert the first expected text
     And  go to My Profile menu and get the text of User Profile

@@ -1,6 +1,5 @@
 package com.krafttech.step_definitions;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -19,7 +18,6 @@ public class NavigationMenuStepDefs {
     @When("go to Developers menu and get the text of Developer")
     public void go_to_developers_menu_and_get_the_text_of_developer() {
         System.out.println("navigate to developer menu and get text");
-
     }
     @Then("Assert the second expected text as developer")
     public void assert_the_second_expected_text_as_developer() {
