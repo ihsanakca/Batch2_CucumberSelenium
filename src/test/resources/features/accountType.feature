@@ -5,6 +5,7 @@ Feature: Account Type
     When User should input "sgezer@gmail.com" and "12345678"
     Then The user name should be "Selim Gezer"
 
+  @sss
   Scenario: second user
     Given The user should be able to login page
     When User should input "eddiem@kraft.com" and "eddiem12"
@@ -33,3 +34,7 @@ Feature: Account Type
       | mike@gmail.com          | mike1234   | Harun          |
       | morganfreeman@kraft.com | mfreeman   | Morgan Freeman |
       | rosa@test.com           | Test123456 | Rosa           |
+
+
+
+
