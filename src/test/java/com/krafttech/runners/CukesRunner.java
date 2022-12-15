@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/krafttech/step_definitions",
         dryRun = false,
-        tags = "@rerun"
+        tags = "@sss"
                 )
 
 public class CukesRunner {
