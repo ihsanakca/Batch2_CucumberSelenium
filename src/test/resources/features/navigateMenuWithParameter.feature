@@ -1,6 +1,6 @@
 Feature: Navigate to menu with parameter
 
-@rerun
+
   Scenario: Selim navigates to edit profile
     Given The user should be able to login page
     When User should input "sgezer@gmail.com" and "12345678"
@@ -8,7 +8,7 @@ Feature: Navigate to menu with parameter
     When The user navigates to "Edit Profile" menu
     Then The user should be able to see home name as "Edit User Profile"
 
-  @rerun
+
   Scenario: Eddie Murphy navigates to edit profile
     Given The user should be able to login page
     When User should input "eddiem@kraft.com" and "eddiem12"
