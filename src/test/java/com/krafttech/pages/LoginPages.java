@@ -7,12 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LoginPages extends BasePage{
 
-    public LoginPages(){
-
-        PageFactory.initElements(Driver.get(),this);
-    }
 
     @FindBy(id = "email")
     public WebElement userEmailInput_loc;
@@ -50,6 +49,11 @@ public class LoginPages extends BasePage{
 
     public String getWarningMessageText(String message){
         return Driver.get().findElement(By.xpath("//*[contains(text(),'"+message+"')]")).getText();
+    }
+
+    List<String> list=new ArrayList<>();
+    public void controlPage(){
+
     }
 
 }

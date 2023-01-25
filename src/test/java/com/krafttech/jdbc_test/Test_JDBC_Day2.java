@@ -2,7 +2,7 @@ package com.krafttech.jdbc_test;
 
 import java.sql.*;
 
-public class Test_JCDB_Day2 {
+public class Test_JDBC_Day2 {
     public static void main(String[] args) {
         String url = "jdbc:sqlserver://94.73.150.3:1433;DatabaseName=u0583688_vlk;encrypt=true;trustServerCertificate=true;";
         String userName = "u0583688_vlk";

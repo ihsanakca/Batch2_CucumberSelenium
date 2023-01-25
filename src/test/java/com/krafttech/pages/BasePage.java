@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
-    public BasePage() {
+     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
 
@@ -24,7 +24,6 @@ public abstract class BasePage {
         }
 
     }
-
     public String subTitle(String subtitle) {
         String subTitleLocator = "//h1[.='" + subtitle + "']";
 
@@ -39,4 +38,6 @@ public abstract class BasePage {
     public String getAccountName_mtd(String accountName) {
         return Driver.get().findElement(By.xpath("//span[.='" + accountName + "']")).getText();
     }
+
+
 }
